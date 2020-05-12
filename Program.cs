@@ -12,6 +12,16 @@ namespace RecursiveFactorial
             Console.WriteLine($"The facotrial of {num} is {Factorial(num)}. ");
         }
 
-        
+        static int Factorial(int aNumber)
+        {
+            if (aNumber == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return aNumber * Factorial(aNumber - 1);
+            }
+        }
     }
 }
